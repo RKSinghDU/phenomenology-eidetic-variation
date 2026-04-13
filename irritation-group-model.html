@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eidetic Variation — Irritation Group Completed Model</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', serif; font-size: 14px; color: #1a1a1a; background: #fafaf8; padding: 2rem; max-width: 860px; margin: 0 auto; line-height: 1.6; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; color: #1a1a1a; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e8e6e0; }
+  .section { margin-bottom: 2rem; }
+  .section-label { font-size: 10px; font-weight: 700; color: #aaa; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; }
+  .instance-row { display: flex; align-items: flex-start; gap: 12px; padding: 10px 13px; border: 1px solid #ece9e2; border-radius: 8px; margin-bottom: 7px; background: #fff; }
+  .inst-num { font-size: 11px; font-weight: 700; color: #0C447C; background: #E6F1FB; border-radius: 4px; padding: 2px 8px; flex-shrink: 0; margin-top: 2px; }
+  .inst-text { font-size: 13px; color: #1a1a1a; line-height: 1.55; }
+  .inst-meta { font-size: 11px; color: #aaa; margin-top: 3px; }
+  .feature-block { border: 1px solid #ece9e2; border-radius: 8px; margin-bottom: 9px; overflow: hidden; }
+  .feature-head { display: flex; align-items: center; justify-content: space-between; padding: 9px 14px; background: #f5f4f0; }
+  .feature-name { font-size: 13px; font-weight: 600; }
+  .badge { font-size: 11px; font-weight: 600; padding: 3px 11px; border-radius: 20px; white-space: nowrap; }
+  .badge-essential { background: #E6F1FB; color: #0C447C; }
+  .badge-accidental { background: #f0ede6; color: #555; }
+  .badge-contested { background: #FAEEDA; color: #633806; }
+  .feature-q { font-size: 12px; color: #555; padding: 8px 14px 10px; border-top: 1px solid #ece9e2; background: #fff; line-height: 1.6; }
+  .reasoning { font-size: 12px; color: #777; margin-top: 5px; line-height: 1.55; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-bottom: 1rem; }
+  .summary-card { border: 1px solid #ece9e2; border-radius: 10px; overflow: hidden; }
+  .summary-head { padding: 9px 14px; font-size: 13px; font-weight: 600; }
+  .irr-head { background: #E6F1FB; color: #0C447C; }
+  .acc-head { background: #f0ede6; color: #444; }
+  .summary-body { padding: 12px 14px; background: #fff; }
+  .struct-item { display: flex; gap: 9px; margin-bottom: 8px; align-items: flex-start; font-size: 13px; line-height: 1.5; }
+  .struct-dot { width: 7px; height: 7px; border-radius: 50%; background: #378ADD; flex-shrink: 0; margin-top: 5px; }
+  .acc-item { display: flex; gap: 9px; margin-bottom: 6px; align-items: flex-start; font-size: 13px; line-height: 1.5; color: #777; }
+  .acc-dot { width: 7px; height: 7px; border-radius: 50%; background: #bbb; flex-shrink: 0; margin-top: 5px; }
+  .definition-box { border-left: 3px solid #378ADD; padding: 12px 15px; background: #E6F1FB; border-radius: 0 8px 8px 0; font-size: 13px; color: #0C447C; line-height: 1.65; margin-bottom: 1.5rem; }
+  .tension-row { border: 1px solid #ece9e2; border-radius: 8px; padding: 11px 14px; margin-bottom: 9px; font-size: 13px; line-height: 1.55; background: #fff; }
+  .tension-q { font-weight: 600; margin-bottom: 5px; }
+  .tension-a { color: #666; }
+  .divider { border: none; border-top: 1px solid #e8e6e0; margin: 1.75rem 0; }
+  .contrast-box { border: 1px solid #ece9e2; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; }
+  .contrast-head { display: grid; grid-template-columns: 1fr 1fr; font-size: 12px; font-weight: 600; }
+  .contrast-head-anger { padding: 8px 12px; background: #FAECE7; color: #712B13; }
+  .contrast-head-irr { padding: 8px 12px; background: #E6F1FB; color: #0C447C; border-left: 1px solid #ece9e2; }
+  .contrast-row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #ece9e2; }
+  .contrast-cell { padding: 8px 12px; font-size: 12px; line-height: 1.5; color: #555; }
+  .contrast-cell:last-child { border-left: 1px solid #ece9e2; }
+  .back { font-size: 12px; color: #888; text-decoration: none; display: inline-block; margin-bottom: 1.5rem; }
+  @media(max-width:600px){ .two-col{ grid-template-columns:1fr; } .contrast-head,.contrast-row{ grid-template-columns:1fr; } }
+  @media print { body { background: #fff; padding: 1rem; } .feature-block, .instance-row, .summary-card, .tension-row { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<a class="back" href="index.html">← Back to activity index</a>
+<h1>Eidetic Variation — Irritation Group</h1>
+<div class="subtitle">Completed model · Phenomenology seminar activity · Step-by-step worked example</div>
+
+<div class="section">
+  <div class="section-label">Step 1 — Five varied instances of irritation</div>
+  <div class="instance-row"><span class="inst-num">1</span><div><div class="inst-text">A colleague chews loudly during every team meeting, day after day, without any awareness of it.</div><div class="inst-meta">Intensity: low-moderate · Context: workplace · Target: a repeated sensory stimulus · Moral dimension: absent</div></div></div>
+  <div class="instance-row"><span class="inst-num">2</span><div><div class="inst-text">Your internet connection drops repeatedly while you are trying to submit an important form online.</div><div class="inst-meta">Intensity: moderate · Context: task obstruction · Target: a situation, no person · Moral dimension: absent</div></div></div>
+  <div class="instance-row"><span class="inst-num">3</span><div><div class="inst-text">A family member asks you the same question — "have you eaten?" — three times within an hour, each time forgetting they asked.</div><div class="inst-meta">Intensity: low · Context: domestic, relationship · Target: a person's behaviour, not the person · Moral dimension: absent or very weak</div></div></div>
+  <div class="instance-row"><span class="inst-num">4</span><div><div class="inst-text">You are exhausted after a long day and every small thing — a dripping tap, background noise, a slow-loading app — grates on you.</div><div class="inst-meta">Intensity: diffuse, objectless · Context: fatigue state · Target: no single thing · Moral dimension: completely absent</div></div></div>
+  <div class="instance-row"><span class="inst-num">5</span><div><div class="inst-text">A presenter uses the phrase "going forward" in every single sentence during a long seminar.</div><div class="inst-meta">Intensity: low, building · Context: passive, observational · Target: a verbal habit · Moral dimension: absent</div></div></div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-label">Step 2 — Imaginative variation: essential or accidental?</div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">Moral dimension — sense of wrongdoing or injustice</span><span class="badge badge-accidental">Accidental</span></div><div class="feature-q">Remove it: can irritation exist with no sense of wrongdoing whatsoever?<br><span class="reasoning">Yes — and this is the clearest contrast with anger. Instances 1, 2, 4, and 5 involve no wrongdoing at all. The chewing colleague is not acting badly; the internet is not blameworthy; the presenter is unaware. Irritation does not require moral violation. This is the essential eidetic boundary between irritation and anger.</span></div></div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">Repetition or accumulation</span><span class="badge badge-essential">Essential</span></div><div class="feature-q">Remove it: can a single, once-only event produce genuine irritation rather than surprise or brief discomfort?<br><span class="reasoning">Across all five instances, repetition or accumulation is present — either literally (chewing every meeting, same question three times) or structurally (the dripping tap, repeated phrase, mounting fatigue). A single isolated stimulus feels more like a startled reaction than irritation. Repetition appears essential to the structure of irritation.</span></div></div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">A specific identifiable target</span><span class="badge badge-accidental">Accidental</span></div><div class="feature-q">Remove it: can irritation be entirely objectless — a state without any identifiable cause?<br><span class="reasoning">Instance 4 (exhaustion state where everything grates) suggests yes — irritation can be diffuse, without any single object. This contrasts with anger, which always has some intentional object even if abstract. Irritation can dissolve into a general texture of the day.</span></div></div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">Low-to-moderate intensity — a grating or wearing quality</span><span class="badge badge-essential">Essential</span></div><div class="feature-q">Remove it: can irritation become high-intensity — a surge — while remaining irritation?<br><span class="reasoning">When we imagined the intensity rising very high, the experience transformed into something else — frustration, then anger. The grating, wearing, friction-like quality at low-to-moderate intensity seems to be what holds irritation together as its own kind. High-intensity irritation becomes a different phenomenon.</span></div></div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">Social witness — someone observing the irritation or its cause</span><span class="badge badge-accidental">Accidental</span></div><div class="feature-q">Remove it: can irritation be entirely private — felt alone with no audience?<br><span class="reasoning">Easily. Instance 2 (internet dropping alone at home) and instance 4 (private fatigue state) are both entirely unwitnessed. Like anger, irritation requires no social witness. Accidental.</span></div></div>
+  <div class="feature-block"><div class="feature-head"><span class="feature-name">Impulse toward redress or desire to change things</span><span class="badge badge-contested">Contested</span></div><div class="feature-q">Remove it: can irritation exist with complete passive acceptance — no wish that things were different?<br><span class="reasoning">The group was divided. Some felt irritation carries a weak, background wish for the stimulus to stop — but it is far less directed than anger's demand. Others felt instance 4 (exhaustion state) involves no real wish for change, just endurance. We tentatively classified the impulse as accidental in irritation, marking a key contrast with anger where it appears essential.</span></div></div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-label">Step 3 — Eidetic structure of irritation</div>
+  <div class="two-col">
+    <div class="summary-card"><div class="summary-head irr-head">Essential features</div><div class="summary-body"><div class="struct-item"><div class="struct-dot"></div><span>A friction-like, grating quality at low-to-moderate intensity</span></div><div class="struct-item"><div class="struct-dot"></div><span>Repetition or accumulation — actual or anticipated</span></div><div class="struct-item"><div class="struct-dot"></div><span>No required moral dimension — the cause need not be blameworthy</span></div><div class="struct-item"><div class="struct-dot"></div><span>A wearing-down quality — the experience erodes rather than surges</span></div></div></div>
+    <div class="summary-card"><div class="summary-head acc-head">Accidental features</div><div class="summary-body"><div class="acc-item"><div class="acc-dot"></div><span>A specific identifiable target or object</span></div><div class="acc-item"><div class="acc-dot"></div><span>Social witness or audience</span></div><div class="acc-item"><div class="acc-dot"></div><span>Desire for redress or change (weak or absent)</span></div><div class="acc-item"><div class="acc-dot"></div><span>Any moral evaluation of the cause</span></div><div class="acc-item"><div class="acc-dot"></div><span>Directed outward expression</span></div></div></div>
+  </div>
+  <div class="definition-box"><strong>Group's one-sentence eidetic definition:</strong><br>Irritation is the experience of being worn down by a repeated or accumulating stimulus — a grating friction that requires no moral violation, no specific target, and no demand that things be otherwise; it simply erodes.</div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-label">Side-by-side comparison with anger group</div>
+  <div class="contrast-box">
+    <div class="contrast-head"><div class="contrast-head-anger">Anger</div><div class="contrast-head-irr">Irritation</div></div>
+    <div class="contrast-row"><div class="contrast-cell">Moral violation essential — something wrong must have occurred</div><div class="contrast-cell">No moral dimension required — the cause can be entirely neutral</div></div>
+    <div class="contrast-row"><div class="contrast-cell">Always has an intentional object, even if abstract</div><div class="contrast-cell">Can be objectless — a diffuse state without any identifiable cause</div></div>
+    <div class="contrast-row"><div class="contrast-cell">Demand for redress is essential — the world must be otherwise</div><div class="contrast-cell">No such demand — endurance, not redress, is the typical response</div></div>
+    <div class="contrast-row"><div class="contrast-cell">Intensity variable — can be cold or hot, but activation present</div><div class="contrast-cell">Low-to-moderate intensity essential — high intensity transforms it</div></div>
+    <div class="contrast-row"><div class="contrast-cell">Single event sufficient — one clear violation can produce it</div><div class="contrast-cell">Repetition or accumulation essential — a single event rarely suffices</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Step 4 — Productive tensions and debrief questions</div>
+  <div class="tension-row"><div class="tension-q">The most productive disagreement: is "objectless irritation" really irritation?</div><div class="tension-a">Instance 4 (everything grating when exhausted) challenges whether irritation can be truly objectless. Some argued that even in that state, each micro-stimulus briefly becomes an object. Others felt the state itself is primary, and objects are incidental. This maps onto Husserl's distinction between thetic and non-thetic consciousness.</div></div>
+  <div class="tension-row"><div class="tension-q">What does repetition being essential tell us methodologically?</div><div class="tension-a">This was not obvious before variation — it emerged through the exercise. No single-event instance felt genuinely irritating. This is exactly what eidetic analysis is for: uncovering structures that are invariant but not immediately visible to introspection alone.</div></div>
+  <div class="tension-row"><div class="tension-q">Clinical implication of the anger/irritation boundary</div><div class="tension-a">A client presenting with chronic irritability may not be angry — they may be experiencing accumulated friction without any moral dimension. This calls for a different response: not exploring perceived violations, but exploring what is wearing the person down, what accumulates, what they cannot escape.</div></div>
+</div>
+
+</body>
+</html>
